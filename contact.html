@@ -10,12 +10,14 @@
 
 	<div class="content" id="window">
 	<form>
+		<label for="mail">Your mail address:</label>
+		<input type="text" id="mail" placeholder="your_mail@example.com" onFocus="this.placeholder=''" onBlur="this.placeholder='your_mail@example.com'">
 		
-		<input type="text" placeholder="your_mail@example.com" onFocus="this.placeholder=''" onBlur="this.placeholder='your_mail@example.com'">
+		<label for="topic">Topic of your messeges:</label>
+		<input type="text" id="topic" placeholder="topic" onFocus="this.placeholder=''" onBlur="this.placeholder='topic'">
 		
-		<input type="text" placeholder="topic" onFocus="this.placeholder=''" onBlur="this.placeholder='topic'">
-		
-		<input type="text" placeholder="your message" onFocus="this.placeholder=''" onBlur="this.placeholder='your message'">
+		<label for="message">Your message:</label>
+		<input type="text" id="message" placeholder="your message" onFocus="this.placeholder=''" onBlur="this.placeholder='your message'">
 		
 		<input type="submit" value="send">
 		<p id="info"></p>
