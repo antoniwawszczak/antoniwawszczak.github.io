@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en-gb">
+<!DOCTYPE html>
+<html lang="en-GB">
 <head>
 	<!-- metadata -->
     <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- title of web page -->
-    <title>Send me messege!</title>
+    <title>Welcome!</title>
 	<!-- css --> 
    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"/> -->
     <link href="static/site.css" rel="stylesheet"/>
@@ -22,37 +22,45 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	
 </head>
-
 <body>
-
-	<header>Send me mail!</header>
+	
+	<header>Welcome on my web page!</header>
 	<!-- why not list? -->
 	<nav>
 		<div class="menu-option"><a href="index.html" target="_self" >welcome</a></div>
 		<div class="menu-option"><a href="about.html">about me</a></div>
 		<div class="menu-option"><a href="contact.html" target="_self">contact</a></div>
 	</nav>
+
 	
-	<div class="content" id="window">
-	<form>
-		<label for="mail">Your mail address:</label><br />
-		<input type="text" id="mail" placeholder="your_mail@example.com" onFocus="this.placeholder=''" onBlur="this.placeholder='your_mail@example.com'"><br />
+	<div class="content">
+	<article>
+	<h1>Sample code:</h1>	
+	<pre>
+	<code>
+	if (true != false){
+	
+		var tmp = 45 + 0.34;
+		print(tmp);	
+	
+	}else if (false) {
+	
+		print("test");
+	
+	} else {
+	
+		this.default(run);
+	
+	}
+	
+	
+	</code>
+	</pre>	
 		
-		<label for="topic">Topic of your messeges:</label><br />
-		<input type="text" id="topic" placeholder="topic" onFocus="this.placeholder=''" onBlur="this.placeholder='topic'"> <br>
-		
-		<label for="message">Your message:</label><br>
-		<input type="text" id="message" placeholder="your message" onFocus="this.placeholder=''" onBlur="this.placeholder='your message'"><br>
-		
-		<input type="submit" value="Send me mail!"><br>
-		<p id="info"></p>
-		<button type="button" onMouseUp="document.getElementById('info').innerHTML = 'Button pressed!';">Woohoo!</button>
-		
-	</form>
+	</article>
 	</div>
+	<footer>&copy; Antoni Wawszczak 2021</footer>
 
 	
-
-	<footer>&copy; Antoni Wawszczak 2021</footer>
 </body>
 </html>

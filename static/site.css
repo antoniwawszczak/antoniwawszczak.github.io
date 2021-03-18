@@ -1,6 +1,5 @@
 body {
-	/*background pattern from subtlepatterns.com*/
-	  background: #5B2473 url("../assets/hexellence.png") ;
+	background: #5B2473 url("../assets/hexellence.png") ;
 	background-size: 2%;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;	
@@ -19,7 +18,7 @@ header {
 	border: 1px solid #A458A6;
 	text-align: center;
 	border-radius: 5px;
-	box-shadow: 1px 1px 10px 2px #FFC312;
+ 	box-shadow: 1px 1px 10px 1px #5B2473;
 }
 nav {
 	width: 80vw;
@@ -34,27 +33,23 @@ nav {
 	border: 1px solid #A458A6;
 	text-align: center;
 	border-radius: 5px;
-	box-shadow: 1px 1px 10px 2px #FFC312;
+	box-shadow: 1px 1px 10px 1px #5B2473;
 
 		
 }
 
 footer {
 	width: 80vw;
-	height: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
-	padding: 10px;
 	background-color: #5B2473;
-	
-	vertical-align:text-bottom;
+	padding: 10px;
 	color:  white;
 	
 	border: 1px solid #A458A6;
 	text-align: center;
 	border-radius: 5px;
-	box-shadow: 1px 1px 10px 2px #FFC312;
+	box-shadow: 1px 1px 10px 1px #5B2473;
 	
 }
 nav .menu-option {
@@ -79,6 +74,8 @@ nav a {
 	width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 10px;
 	background-color: #5B2473;
 	color: white;
@@ -86,7 +83,7 @@ nav a {
 	font-style: normal;
 	font-weight: 300;
 	border-radius: 5px;
-	box-shadow: 1px 1px 10px 2px #FFC312;
+	box-shadow: 1px 1px 10px 1px #5B2473;
 	
 }
 .content #window {
@@ -100,19 +97,21 @@ nav a {
 	padding-left: 5px;
 
 }
+form label,input {
+	width: 80vw;
+}
 
 #window {
 	
-	width: 500px;
 	high: 700px;
-	padding: 50px;
+	padding: 10px;
 	
-	margin-top: 100px;
-	box-shadow: 3px 3px 10px 5px #aaaaaa;
+	margin-top: 10px;
+	box-shadow: 1px 1px 10px 1px #5B2473;
 }
 input[type=text],
 input[type=password] {
-	width: 500px;
+
 	color: #666;
 	border: 2px solid #ddd;
 	font-size: 20px;
@@ -135,9 +134,10 @@ input[type=password]{
 }
 
 input[type=submit]{
-	width: 500px;
+	
 	height: 30px;
 	background-color: #FFC312;
+	color: #5B2473;
 	font-size: 15px;
 	color: white;
 	padding: 15px, 10px;
@@ -150,10 +150,10 @@ input[type=submit]{
 	margin-top: 20px;
 }
 input[type=submit]:hover {
-	background-color: #F79F1F;
-	box-shadow: 3px 3px 10px 5px #aaaaaa;
-	border: 2px solid #A3CB38;
-	color: #009432;
+	background-color: #5B2473;
+	box-shadow: 3px 3px 10px 5px #FFC312;
+	border: 2px solid #A458A6;
+	color: #FFC312;
 }
 
 
@@ -171,7 +171,7 @@ input[type=submit]:hover {
     text-align: center;
     background: #ffffffcc;
     border-radius: 26px;
-    box-shadow: #555 2px 2px 20px;
+  	box-shadow: 1px 1px 10px 1px #5B2473;
     padding: 2em 4em 2.5em;
     font-weight: 100;
     font-size: x-large;
@@ -184,4 +184,8 @@ input[type=submit]:hover {
 .box p:nth-child(2) {
     font-family: monospace;
     font-size: 2em;
+}
+code {
+font-weight: 200;
+	font-size: 16px;
 }
