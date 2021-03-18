@@ -1,3 +1,154 @@
+body {
+	/*background pattern from subtlepatterns.com*/
+	  background: #6cb76c url("../assets/hexellence.png") ;
+	background-size: 2%;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;	
+}
+
+header {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #5B2473;
+	color: white;
+	font-style: oblique;
+	font-size: 36px;
+	border: 1px solid #A458A6;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 2px #FFC312;
+}
+nav {
+	width: 80vw;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #5B2473;
+	color:  white;
+	
+	border: 1px solid #A458A6;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 2px #FFC312;
+
+		
+}
+
+footer {
+	width: 80vw;
+	height: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #5B2473;
+	
+	vertical-align:text-bottom;
+	color:  white;
+	
+	border: 1px solid #A458A6;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 2px #FFC312;
+	
+}
+nav .menu-option {
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	padding: 10px;
+	border-right: 1px dashed #A458A6;
+}
+nav .menu-option:first-child {
+	border-left: 1px dashed #A458A6;
+}
+nav .menu-option:hover {
+	background-color: #9980FA;	
+	color: #1B1464;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+}
+.content {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1terminal0px;
+	padding: 10px;
+	background-color: #5B2473;
+	color: white;
+	border: 1px solid #A458A6;
+	text-align: justify;
+	font-style: normal;
+	font-weight: 300;
+	border-radius: 5px;
+	box-shadow: 1px 1px 10px 2px #FFC312;
+	
+}
+
+#window {
+	
+	background-color: white;
+	width: 500px;
+	high: 700px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	box-shadow: 3px 3px 10px 5px #aaaaaa;
+}
+input[type=text],
+input[type=password] {
+	width: 500px;
+	color: #666;
+	border: 2px solid #ddd;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 3px;
+	margin-top: 10px;
+}
+input:focus::-webkit-input-placeholder{
+	color: #006266;
+}
+input[type=text]:focus,
+input[type=password]{
+	box-shadow: 3px 3px 10px 5px #aaaaaa;
+	border: 2px solid #A3CB38;
+	color: #009432;
+	background-color: #C4E538;
+}
+
+input[type=submit]{
+	width: 500px;
+	height: 30px;
+	background-color: #FFC312;
+	font-size: 15px;
+	color: white;
+	padding: 15px, 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	margin-top: 20px;
+}
+input[type=submit]:hover {
+	background-color: #F79F1F;
+	box-shadow: 3px 3px 10px 5px #aaaaaa;
+	border: 2px solid #A3CB38;
+	color: #009432;
+}
+
+
 .container {
     width: 100%;
     display: flex;
