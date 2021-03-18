@@ -102,7 +102,7 @@ form label,input {
 }
 
 #window {
-	width: auto;
+	width: 80vw;
 	high: 700px;
 	padding: 10px;
 	
