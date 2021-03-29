@@ -21,21 +21,58 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href=  
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  
+        
+    <script src=  
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">  
+    </script>  
+        
+    <script src=  
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">  
+    </script>  
+        
+    <script src=  
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">  
+    </script>  
+	
+	<!-- do modali -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	
+	
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-	<header>Send me mail!</header>
 	<!-- why not list? -->
-	<nav>
-		<div class="menu-option"><a href="index.html" target="_self" >welcome</a></div>
-		<div class="menu-option"><a href="about.html" target="_self">about me</a></div>
-		<div class="menu-option"><a href="contact.html" target="_self">contact</a></div>
+	<nav class="navbar navbar-expand navbar-dark fixed-top">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" target="_self" >welcome</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="about.html" target="_self">about me</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contact.html" target="_self">contact</a>
+			</li>
+		</ul>
 	</nav>
 	
-	<div class="content" id="window">
+	<div class="content" id="window" style="margin-top: 60px">
 	<form>
-		<label for="mail">Your mail address:</label><br />
+		<label for="mail">
+			Your mail address: <span class="badge badge-dark">Oh yeah!</span></label><br />
 		<input type="text" id="mail" placeholder="your_mail@example.com" onFocus="this.placeholder=''" onBlur="this.placeholder='your_mail@example.com'"><br />
 		
 		<label for="topic">Topic of your messeges:</label><br />
@@ -44,15 +81,140 @@
 		<label for="message">Your message:</label><br>
 		<input type="text" id="message" placeholder="your message" onFocus="this.placeholder=''" onBlur="this.placeholder='your message'"><br>
 		
-		<input type="submit" value="Send me mail!"><br>
-		<p id="info"></p>
-		<button type="button" onMouseUp="document.getElementById('info').innerHTML = 'Button pressed!';">Woohoo!</button>
+		<div class="btn-group btn-block">
+			
+			<button type="button" class="btn btn-danger">
+				Send me error!
+			</button>
+			
+			<button type="button" class="btn btn-warning">
+				 Send me warning!
+			</button>
+		
+			<button type="button" class="btn btn-block btn-success" data-toggle="modal" data-target="#exampleModal" >
+				<span class="spinner-grow spinner-grow-sm"></span> 
+				Send me mail!
+			</button>
+			<!-- modal -->
+			<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" 
+                 aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+   <div class="modal-dialog" role="document"> 
+    <div class="modal-content"> 
+     <div class="modal-header"> 
+       <h6 class="modal-title" id="exampleModalLabel" style="color:green;"> 
+                                                         GeeksforGeeks</h6> 
+                       
+       <!-- The title of the modal -->
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+       <span aria-hidden="true">×</span> 
+      </button> 
+     </div> 
+     <div class="modal-body">  
+                     
+     <!-- The content inside the modal box -->
+     <p style="color:black;">Articles that need little modification/improvement from reviewers 
+      are published first. To quickly get your articles reviewed, please  
+      refer existing articles, their formating style, coding style, and try 
+      to make your close to them. </p> 
+    </div> 
+    <div class="modal-footer"> 
+     <button type="button" class="btn btn-secondary" 
+                                             data-dismiss="modal">Close</button> 
+                     
+      <!-- The close button in the bottom of the modal -->
+     <button type="button" class="btn btn-primary">okay</button> 
+       
+      <!-- The save changes button in the bottom of the modal -->
+		
+		
+		
+		
+		
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+			
+			
+			
+			<!-- /modal -->
+			
+			
+			
+			
+			
+		</div>
+		<!-- progress bar
+		<div class="progress"> 
+            <div class="progress-bar progress-bar-striped 
+                    progress-bar-animated" style="width:10%;"> 
+                10% 
+            </div> 
+              
+            <div class="progress-bar bg-success progress-bar-striped 
+                    progress-bar-animated" style="width:23%;"> 
+                23% 
+            </div> 
+  
+            <div class="progress-bar bg-warning progress-bar-striped 
+                    progress-bar-animated" style="width:33%;"> 
+                33% 
+            </div> 
+  
+            <div class="progress-bar bg-danger progress-bar-striped 
+                    progress-bar-animated" style="width:33%;"> 
+                33% 
+            </div> 
+        </div> 
+		-->
+			
+			
+		
+	
 		
 	</form>
+		
+		<div>
+		
+		
+		<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color:black;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">We find error!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" >
+        #error
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+		
+		
+		
+		</div>
+		
 	</div>
-
-	
-
-	<footer>&copy; Antoni Wawszczak 2021</footer>
+<!-- 
+	<div class="panel panel-default">	
+		<div class="panel-body">tralalal</div>
+		<div class="panel-foother">&copy; Antoni Wawszczak 2021 </div>
+	</div>
+	-->	
+		<footer>&copy; Antoni Wawszczak 2021</footer>
 </body>
 </html>

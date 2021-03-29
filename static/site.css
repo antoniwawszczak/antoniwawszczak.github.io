@@ -133,28 +133,6 @@ input[type=password]{
 	background-color: #C4E538;
 }
 
-input[type=submit]{
-	
-	height: 30px;
-	background-color: #FFC312;
-	color: #5B2473;
-	font-size: 15px;
-	color: white;
-	padding: 15px;
-	margin-top: 10px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	letter-spacing: 2px;
-	outline: none;
-	margin-top: 20px;
-}
-input[type=submit]:hover {
-	background-color: #5B2473;
-	box-shadow: 3px 3px 10px 5px #FFC312;
-	border: 2px solid #A458A6;
-	color: #FFC312;
-}
 
 
 .container {
@@ -186,6 +164,7 @@ input[type=submit]:hover {
     font-size: 2em;
 }
 code {
+	width: 80vw;
 font-weight: 200;
 	font-size: 16px;
 }
